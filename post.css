@@ -1,20 +1,36 @@
-.blog-title {
-  font-size: 48px;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #eaedf0;
 }
 
-#TableOfContents > ul li {
-  list-style-type: none;
-  font-size: 15px;
+.bottom-share {
+  position: fixed;
+  z-index: 1000;
+  bottom: 20px;
+  right: 25px;
+}
+.bottom-share button {
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.blog-page-color {
+  color: #3a3b3c !important;
+}
+#TableOfContents {
+  padding: 3%;
+}
+#TableOfContents > ul > li > ul {
+  display: none;
 }
 
-#TableOfContents > ul li a {
-  text-decoration: none;
+#TableOfContents > ul {
+  padding-left: 7%;
 }
-
-.mincho-font {
-  font-family: "Shippori Mincho B1", serif;
-}
-
 article {
   line-height: 1.756;
   font-size: 18px;
@@ -29,31 +45,8 @@ article blockquote {
 }
 
 article blockquote > p {
-  color: #3c4858 !important;
   margin-top: 0.5rem !important;
   margin-bottom: 0.5rem !important;
-}
-
-article h1 {
-  font-size: 52px !important;
-  line-height: 1.15;
-}
-
-article h2 {
-  font-size: 32px;
-  line-height: 1.333;
-}
-
-article h3 {
-  font-size: 24px;
-  line-height: 1.45;
-}
-
-article h4,
-h5,
-h6 {
-  font-size: 18px;
-  line-height: 1.45;
 }
 
 article > table {
@@ -103,6 +96,7 @@ figcaption {
 }
 
 article pre {
+  border-radius: 0.5rem !important;
   margin: 5px;
   padding: 2%;
   background-color: #1f618d !important;
